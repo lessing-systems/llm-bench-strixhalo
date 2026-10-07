@@ -1,0 +1,11 @@
+{
+ "tag": "agentv2-halogen-baseline",
+ "n": 36,
+ "pass_rate": 1.0,
+ "bad_calls": 2,
+ "calls": 323,
+ "http_err": 0,
+ "length_stops": 0,
+ "avg_wall_s": 54.2,
+ "avg_turns": 6.9
+}

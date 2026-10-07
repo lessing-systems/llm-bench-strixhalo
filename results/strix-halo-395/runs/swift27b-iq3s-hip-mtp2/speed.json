@@ -1,0 +1,111 @@
+{
+ "tag": "swift27b-iq3s-hip-mtp2",
+ "gpu_mem_mib": null,
+ "runs": [
+  {
+   "test": "prose",
+   "run": 0,
+   "tg": 22.26001349103881,
+   "n": 1000,
+   "pp": 160.39365184839363,
+   "draft_n": 1040,
+   "draft_acc": 478,
+   "err": null
+  },
+  {
+   "test": "prose",
+   "run": 1,
+   "tg": 22.616386778881374,
+   "n": 1000,
+   "pp": 159.910906780508,
+   "draft_n": 1024,
+   "draft_acc": 487,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 0,
+   "tg": 30.589956242583316,
+   "n": 1000,
+   "pp": 166.01325551994074,
+   "draft_n": 756,
+   "draft_acc": 620,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 1,
+   "tg": 30.81803940569123,
+   "n": 1000,
+   "pp": 164.33905675702155,
+   "draft_n": 751,
+   "draft_acc": 623,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 0,
+   "tg": 32.33977678681814,
+   "n": 961,
+   "pp": 195.34262067547422,
+   "draft_n": 688,
+   "draft_acc": 616,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 1,
+   "tg": 31.2864585584144,
+   "n": 856,
+   "pp": 197.46517078139047,
+   "draft_n": 634,
+   "draft_acc": 538,
+   "err": null
+  },
+  {
+   "test": "prose@long_350",
+   "tg": 21.95199975733062,
+   "n": 551,
+   "pp": 282.68828886083276,
+   "prompt_n": 14693,
+   "cache_n": 0,
+   "draft_n": 502,
+   "draft_acc": 300,
+   "err": null
+  },
+  {
+   "test": "prose@long_700",
+   "tg": 18.94517270648088,
+   "n": 523,
+   "pp": 261.3664236629097,
+   "prompt_n": 29315,
+   "cache_n": 0,
+   "draft_n": 482,
+   "draft_acc": 282,
+   "err": null
+  },
+  {
+   "test": "prose@long_1250",
+   "tg": 15.875918342072762,
+   "n": 563,
+   "pp": 232.42920966202482,
+   "prompt_n": 52329,
+   "cache_n": 0,
+   "draft_n": 516,
+   "draft_acc": 304,
+   "err": null
+  }
+ ],
+ "gpu_mem_mib_after": null,
+ "summary": {
+  "prose": 22.4,
+  "code": 30.7,
+  "reasoning": 31.8,
+  "prose@long_350": 22.0,
+  "pp@long_350": 283,
+  "prose@long_700": 18.9,
+  "pp@long_700": 261,
+  "prose@long_1250": 15.9,
+  "pp@long_1250": 232
+ }
+}

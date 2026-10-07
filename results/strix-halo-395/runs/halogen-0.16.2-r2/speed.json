@@ -1,0 +1,141 @@
+{
+ "tag": "halogen-0.16.2-r2",
+ "gpu_mem_mib": null,
+ "runs": [
+  {
+   "test": "prose",
+   "run": 0,
+   "tg": 39.001,
+   "n": 1000,
+   "pp": 278.054,
+   "draft_n": 607,
+   "draft_acc": 391,
+   "err": null
+  },
+  {
+   "test": "prose",
+   "run": 1,
+   "tg": 40.58,
+   "n": 1000,
+   "pp": 286.738,
+   "draft_n": 603,
+   "draft_acc": 395,
+   "err": null
+  },
+  {
+   "test": "prose",
+   "run": 2,
+   "tg": 41.17,
+   "n": 1000,
+   "pp": 279.441,
+   "draft_n": 600,
+   "draft_acc": 399,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 0,
+   "tg": 50.027,
+   "n": 1000,
+   "pp": 272.823,
+   "draft_n": 521,
+   "draft_acc": 477,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 1,
+   "tg": 48.231,
+   "n": 1000,
+   "pp": 283.379,
+   "draft_n": 540,
+   "draft_acc": 458,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 2,
+   "tg": 51.589,
+   "n": 1000,
+   "pp": 281.385,
+   "draft_n": 518,
+   "draft_acc": 480,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 0,
+   "tg": 50.28,
+   "n": 1011,
+   "pp": 275.662,
+   "draft_n": 529,
+   "draft_acc": 481,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 1,
+   "tg": 50.946,
+   "n": 997,
+   "pp": 111.524,
+   "draft_n": 521,
+   "draft_acc": 475,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 2,
+   "tg": 49.81,
+   "n": 1113,
+   "pp": 111.008,
+   "draft_n": 570,
+   "draft_acc": 518,
+   "err": null
+  },
+  {
+   "test": "prose@long_350",
+   "tg": 41.014,
+   "n": 564,
+   "pp": 1601.186,
+   "prompt_n": 14692,
+   "cache_n": 0,
+   "draft_n": 328,
+   "draft_acc": 235,
+   "err": null
+  },
+  {
+   "test": "prose@long_700",
+   "tg": 40.858,
+   "n": 554,
+   "pp": 1660.85,
+   "prompt_n": 29315,
+   "cache_n": 0,
+   "draft_n": 325,
+   "draft_acc": 229,
+   "err": null
+  },
+  {
+   "test": "prose@long_1250",
+   "tg": 41.148,
+   "n": 600,
+   "pp": 1658.385,
+   "prompt_n": 52329,
+   "cache_n": 0,
+   "draft_n": 351,
+   "draft_acc": 247,
+   "err": null
+  }
+ ],
+ "gpu_mem_mib_after": null,
+ "summary": {
+  "prose": 40.6,
+  "code": 50.0,
+  "reasoning": 50.3,
+  "prose@long_350": 41.0,
+  "pp@long_350": 1601,
+  "prose@long_700": 40.9,
+  "pp@long_700": 1661,
+  "prose@long_1250": 41.1,
+  "pp@long_1250": 1658
+ }
+}

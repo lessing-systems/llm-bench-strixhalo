@@ -1,0 +1,64 @@
+# halogen-flash-server 0.16.2 + Swift-1.5 Qwen3.8-Flash-Next IQ4_XS, OpenAI API on :8731 (only one ~110 GB
+# engine fits, so any other halogen on this port must be down first).
+#
+#   ./up.sh                      # drop caches + compact memory, build if needed, up -d, wait for /health
+#   sudo docker compose -p halogen-swift down
+#
+# Image: built from ./Dockerfile (halogen 0.16.2 pinned by digest, the benchmarked settings baked in). Weights stay on the host:
+#   ~/models/swift-flashnext-gguf   ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF, IQ4_XS/ (97.7 GB)
+#   ~/models/halogen-qwen38-flash-next   halogen's repo: qwen38-flash-next-mtp.hgn + tokenizer/
+# Both are mounted read-only. Startup repacks the GGUF into 66.9 GiB of pinned RAM in ~25 s (warm disk); the
+# engine refuses to start if MemAvailable would drop under 16 GiB, which is why up.sh drops the ZFS ARC first.
+#
+# Fallbacks (same port, swap by bringing this down and the other up):
+#   ../halogen-0.16.2/docker-compose.yml      halogen 0.16.2, its own v2 checkpoint (base Flash-Next)
+#   a halogen-flash-server checkout/docker-compose.yml halogen 0.15.0, the stock baseline
+x-halogen: &halogen
+  image: local/halogen-swift:0.16.2-swift1.5-iq4xs
+  build: .
+  volumes:
+    - ${MODELS_DIR:-${HOME}/models}/halogen-qwen38-flash-next:/models:ro
+    - ${MODELS_DIR:-${HOME}/models}/swift-flashnext-gguf:/gguf:ro
+  restart: "no"                      # systemd (halogen-swift.service) owns start/stop, not docker
+  security_opt: [seccomp=unconfined]
+  logging:                           # into the systemd journal; `docker logs` still works with this driver
+    driver: journald                 #   journalctl CONTAINER_NAME=halogen-swift-engine-1 -f
+    options:                         #   journalctl -t halogen-swift-engine-1 --since today
+      tag: "{{.Name}}"                #   -> SYSLOG_IDENTIFIER = container name
+
+services:
+  engine:
+    <<: *halogen
+    command: ["engine"]
+    environment:
+      HALOGEN_BIND: 0.0.0.0          # inside the compose network only; the engine port is not published
+      HALOGEN_VISION_TOWER: ""
+    devices: [/dev/kfd, /dev/dri]
+    ipc: host                        # load-bearing for the GPU runtime (see halogen's own compose file)
+    ulimits:
+      memlock: -1
+    group_add: ["44", "992"]         # video, render: `getent group video render` on YOUR host
+    healthcheck:
+      test: ["CMD", "/usr/local/bin/halogen-healthcheck", "engine"]
+      interval: 10s
+      timeout: 35s
+      retries: 3
+      start_period: 20m
+    stop_grace_period: 60s
+
+  api:
+    <<: *halogen
+    command: ["api"]
+    depends_on:
+      engine:
+        condition: service_healthy
+    environment:
+      HALOGEN_ENGINE: engine:8730
+    ports:
+      - "8731:8731"
+    healthcheck:
+      test: ["CMD", "/usr/local/bin/halogen-healthcheck", "api"]
+      interval: 10s
+      timeout: 35s
+      retries: 3
+      start_period: 2m

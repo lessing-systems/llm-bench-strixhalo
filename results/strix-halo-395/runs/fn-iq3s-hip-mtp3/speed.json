@@ -1,0 +1,111 @@
+{
+ "tag": "fn-iq3s-hip-mtp3",
+ "gpu_mem_mib": null,
+ "runs": [
+  {
+   "test": "prose",
+   "run": 0,
+   "tg": 26.65202823802401,
+   "n": 1000,
+   "pp": 145.77790735813988,
+   "draft_n": 1374,
+   "draft_acc": 540,
+   "err": null
+  },
+  {
+   "test": "prose",
+   "run": 1,
+   "tg": 27.629442763922235,
+   "n": 1000,
+   "pp": 145.5093476763976,
+   "draft_n": 1349,
+   "draft_acc": 548,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 0,
+   "tg": 40.03804054711281,
+   "n": 1000,
+   "pp": 147.93993638582737,
+   "draft_n": 890,
+   "draft_acc": 701,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 1,
+   "tg": 41.50109157425646,
+   "n": 1000,
+   "pp": 144.47052940114187,
+   "draft_n": 891,
+   "draft_acc": 701,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 0,
+   "tg": 43.551965642979155,
+   "n": 907,
+   "pp": 178.1369685775763,
+   "draft_n": 774,
+   "draft_acc": 648,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 1,
+   "tg": 41.2573204878634,
+   "n": 1076,
+   "pp": 178.37821344830905,
+   "draft_n": 960,
+   "draft_acc": 755,
+   "err": null
+  },
+  {
+   "test": "prose@long_350",
+   "tg": 25.51698267772126,
+   "n": 579,
+   "pp": 337.6877269001014,
+   "prompt_n": 14693,
+   "cache_n": 0,
+   "draft_n": 765,
+   "draft_acc": 323,
+   "err": null
+  },
+  {
+   "test": "prose@long_700",
+   "tg": 24.19821597447638,
+   "n": 503,
+   "pp": 311.16593839967385,
+   "prompt_n": 29315,
+   "cache_n": 0,
+   "draft_n": 642,
+   "draft_acc": 288,
+   "err": null
+  },
+  {
+   "test": "prose@long_1250",
+   "tg": 20.948196007453078,
+   "n": 562,
+   "pp": 274.9237410906496,
+   "prompt_n": 52329,
+   "cache_n": 0,
+   "draft_n": 696,
+   "draft_acc": 329,
+   "err": null
+  }
+ ],
+ "gpu_mem_mib_after": null,
+ "summary": {
+  "prose": 27.1,
+  "code": 40.8,
+  "reasoning": 42.4,
+  "prose@long_350": 25.5,
+  "pp@long_350": 338,
+  "prose@long_700": 24.2,
+  "pp@long_700": 311,
+  "prose@long_1250": 20.9,
+  "pp@long_1250": 275
+ }
+}

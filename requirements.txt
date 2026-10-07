@@ -1,0 +1,4 @@
+requests
+pytest
+numpy
+huggingface_hub

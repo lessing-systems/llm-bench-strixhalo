@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+*.gguf
+models/
+results/*/logs/current_server.json

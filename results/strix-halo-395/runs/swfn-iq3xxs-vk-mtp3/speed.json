@@ -1,0 +1,111 @@
+{
+ "tag": "swfn-iq3xxs-vk-mtp3",
+ "gpu_mem_mib": 55641,
+ "runs": [
+  {
+   "test": "prose",
+   "run": 0,
+   "tg": 28.033476067408976,
+   "n": 1000,
+   "pp": 73.7034122047586,
+   "draft_n": 1432,
+   "draft_acc": 521,
+   "err": null
+  },
+  {
+   "test": "prose",
+   "run": 1,
+   "tg": 29.548681600828665,
+   "n": 1000,
+   "pp": 93.7141250614999,
+   "draft_n": 1349,
+   "draft_acc": 548,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 0,
+   "tg": 44.252150614653075,
+   "n": 1000,
+   "pp": 94.07558973635317,
+   "draft_n": 898,
+   "draft_acc": 699,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 1,
+   "tg": 43.706961057622706,
+   "n": 1000,
+   "pp": 94.94248676282635,
+   "draft_n": 911,
+   "draft_acc": 695,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 0,
+   "tg": 46.80983598158752,
+   "n": 922,
+   "pp": 75.99810004749881,
+   "draft_n": 783,
+   "draft_acc": 660,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 1,
+   "tg": 46.24860158009444,
+   "n": 887,
+   "pp": 87.97141392055023,
+   "draft_n": 762,
+   "draft_acc": 632,
+   "err": null
+  },
+  {
+   "test": "prose@long_350",
+   "tg": 29.095692573914697,
+   "n": 526,
+   "pp": 352.01155569629947,
+   "prompt_n": 14693,
+   "cache_n": 0,
+   "draft_n": 654,
+   "draft_acc": 308,
+   "err": null
+  },
+  {
+   "test": "prose@long_700",
+   "tg": 24.22098645680674,
+   "n": 550,
+   "pp": 319.07035650479577,
+   "prompt_n": 29314,
+   "cache_n": 0,
+   "draft_n": 774,
+   "draft_acc": 292,
+   "err": null
+  },
+  {
+   "test": "prose@long_1250",
+   "tg": 26.367057625727377,
+   "n": 480,
+   "pp": 274.65830371812643,
+   "prompt_n": 52328,
+   "cache_n": 0,
+   "draft_n": 624,
+   "draft_acc": 271,
+   "err": null
+  }
+ ],
+ "gpu_mem_mib_after": 56332,
+ "summary": {
+  "prose": 28.8,
+  "code": 44.0,
+  "reasoning": 46.5,
+  "prose@long_350": 29.1,
+  "pp@long_350": 352,
+  "prose@long_700": 24.2,
+  "pp@long_700": 319,
+  "prose@long_1250": 26.4,
+  "pp@long_1250": 275
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "tag": "agentv2-halogen-0.16.2-swift-iq4xs",
+ "n": 36,
+ "pass_rate": 1.0,
+ "bad_calls": 0,
+ "calls": 320,
+ "http_err": 0,
+ "length_stops": 0,
+ "avg_wall_s": 40.4,
+ "avg_turns": 6.6
+}

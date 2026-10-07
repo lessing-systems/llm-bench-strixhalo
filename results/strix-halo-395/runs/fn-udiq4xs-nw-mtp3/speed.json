@@ -1,0 +1,111 @@
+{
+ "tag": "fn-udiq4xs-nw-mtp3",
+ "gpu_mem_mib": null,
+ "runs": [
+  {
+   "test": "prose",
+   "run": 0,
+   "tg": 24.766671428280304,
+   "n": 1000,
+   "pp": 113.70165902902843,
+   "draft_n": 969,
+   "draft_acc": 414,
+   "err": null
+  },
+  {
+   "test": "prose",
+   "run": 1,
+   "tg": 24.35167088904489,
+   "n": 1000,
+   "pp": 146.19005228904905,
+   "draft_n": 1002,
+   "draft_acc": 402,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 0,
+   "tg": 41.73216995127529,
+   "n": 1000,
+   "pp": 144.3915008941166,
+   "draft_n": 801,
+   "draft_acc": 665,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 1,
+   "tg": 39.282578223744046,
+   "n": 1000,
+   "pp": 151.6600947292284,
+   "draft_n": 813,
+   "draft_acc": 643,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 0,
+   "tg": 39.97097035050756,
+   "n": 888,
+   "pp": 120.42999847877897,
+   "draft_n": 714,
+   "draft_acc": 579,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 1,
+   "tg": 39.136043694149336,
+   "n": 898,
+   "pp": 164.71393956732248,
+   "draft_n": 726,
+   "draft_acc": 581,
+   "err": null
+  },
+  {
+   "test": "prose@long_350",
+   "tg": 23.272190284123777,
+   "n": 558,
+   "pp": 531.2658619541834,
+   "prompt_n": 14693,
+   "cache_n": 0,
+   "draft_n": 531,
+   "draft_acc": 248,
+   "err": null
+  },
+  {
+   "test": "prose@long_700",
+   "tg": 20.707592172306757,
+   "n": 483,
+   "pp": 466.31027564180374,
+   "prompt_n": 29314,
+   "cache_n": 0,
+   "draft_n": 483,
+   "draft_acc": 196,
+   "err": null
+  },
+  {
+   "test": "prose@long_1250",
+   "tg": 18.74936922919468,
+   "n": 581,
+   "pp": 369.38996012926367,
+   "prompt_n": 52329,
+   "cache_n": 0,
+   "draft_n": 582,
+   "draft_acc": 228,
+   "err": null
+  }
+ ],
+ "gpu_mem_mib_after": null,
+ "summary": {
+  "prose": 24.6,
+  "code": 40.5,
+  "reasoning": 39.6,
+  "prose@long_350": 23.3,
+  "pp@long_350": 531,
+  "prose@long_700": 20.7,
+  "pp@long_700": 466,
+  "prose@long_1250": 18.7,
+  "pp@long_1250": 369
+ }
+}

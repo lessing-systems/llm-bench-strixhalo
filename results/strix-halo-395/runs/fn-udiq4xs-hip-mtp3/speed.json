@@ -1,0 +1,111 @@
+{
+ "tag": "fn-udiq4xs-hip-mtp3",
+ "gpu_mem_mib": null,
+ "runs": [
+  {
+   "test": "prose",
+   "run": 0,
+   "tg": 25.56813993752672,
+   "n": 1000,
+   "pp": 142.76754893612681,
+   "draft_n": 1394,
+   "draft_acc": 534,
+   "err": null
+  },
+  {
+   "test": "prose",
+   "run": 1,
+   "tg": 26.206450957932347,
+   "n": 1000,
+   "pp": 144.23770373575653,
+   "draft_n": 1370,
+   "draft_acc": 542,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 0,
+   "tg": 40.79634464751958,
+   "n": 1000,
+   "pp": 145.1143892079545,
+   "draft_n": 874,
+   "draft_acc": 707,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 1,
+   "tg": 41.54810484495819,
+   "n": 1000,
+   "pp": 145.11722401913315,
+   "draft_n": 859,
+   "draft_acc": 712,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 0,
+   "tg": 39.26456001805703,
+   "n": 1011,
+   "pp": 174.1577410824362,
+   "draft_n": 912,
+   "draft_acc": 707,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 1,
+   "tg": 37.380238764973576,
+   "n": 1078,
+   "pp": 175.25775573219696,
+   "draft_n": 1026,
+   "draft_acc": 736,
+   "err": null
+  },
+  {
+   "test": "prose@long_350",
+   "tg": 25.87705529965484,
+   "n": 535,
+   "pp": 336.44409007743207,
+   "prompt_n": 14692,
+   "cache_n": 0,
+   "draft_n": 669,
+   "draft_acc": 312,
+   "err": null
+  },
+  {
+   "test": "prose@long_700",
+   "tg": 23.841378319981235,
+   "n": 560,
+   "pp": 308.90241697305765,
+   "prompt_n": 29315,
+   "cache_n": 0,
+   "draft_n": 699,
+   "draft_acc": 327,
+   "err": null
+  },
+  {
+   "test": "prose@long_1250",
+   "tg": 20.22545420616057,
+   "n": 588,
+   "pp": 272.45632965470605,
+   "prompt_n": 52328,
+   "cache_n": 0,
+   "draft_n": 735,
+   "draft_acc": 342,
+   "err": null
+  }
+ ],
+ "gpu_mem_mib_after": null,
+ "summary": {
+  "prose": 25.9,
+  "code": 41.2,
+  "reasoning": 38.3,
+  "prose@long_350": 25.9,
+  "pp@long_350": 336,
+  "prose@long_700": 23.8,
+  "pp@long_700": 309,
+  "prose@long_1250": 20.2,
+  "pp@long_1250": 272
+ }
+}

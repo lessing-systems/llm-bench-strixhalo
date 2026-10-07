@@ -1,0 +1,51 @@
+{
+ "tag": "halogen-baseline",
+ "passed": 4,
+ "n": 4,
+ "rows": [
+  {
+   "i": 0,
+   "ok": true,
+   "names": [
+    "read_file"
+   ],
+   "finish": "tool_calls",
+   "err": null,
+   "prompt_n": 30563,
+   "content": "I'll try reading that file."
+  },
+  {
+   "i": 1,
+   "ok": true,
+   "names": [
+    "read_file"
+   ],
+   "finish": "tool_calls",
+   "err": null,
+   "prompt_n": 30562,
+   "content": "I'll take a look at that file for you."
+  },
+  {
+   "i": 2,
+   "ok": true,
+   "names": [
+    "read_file"
+   ],
+   "finish": "tool_calls",
+   "err": null,
+   "prompt_n": 30563,
+   "content": "I'll try opening that file to check for the VAT table."
+  },
+  {
+   "i": 3,
+   "ok": true,
+   "names": [
+    "read_file"
+   ],
+   "finish": "tool_calls",
+   "err": null,
+   "prompt_n": 30562,
+   "content": "I'll try to open that file."
+  }
+ ]
+}

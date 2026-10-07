@@ -1,0 +1,51 @@
+{
+ "tag": "fn-iq3s-hip-mtp3",
+ "passed": 4,
+ "n": 4,
+ "rows": [
+  {
+   "i": 0,
+   "ok": true,
+   "names": [
+    "read_file"
+   ],
+   "finish": "tool_calls",
+   "err": null,
+   "prompt_n": 30563,
+   "content": ""
+  },
+  {
+   "i": 1,
+   "ok": true,
+   "names": [
+    "read_file"
+   ],
+   "finish": "tool_calls",
+   "err": null,
+   "prompt_n": 29302,
+   "content": ""
+  },
+  {
+   "i": 2,
+   "ok": true,
+   "names": [
+    "read_file"
+   ],
+   "finish": "tool_calls",
+   "err": null,
+   "prompt_n": 29301,
+   "content": ""
+  },
+  {
+   "i": 3,
+   "ok": true,
+   "names": [
+    "read_file"
+   ],
+   "finish": "tool_calls",
+   "err": null,
+   "prompt_n": 29302,
+   "content": ""
+  }
+ ]
+}

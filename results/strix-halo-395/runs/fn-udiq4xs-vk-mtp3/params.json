@@ -1,0 +1,58 @@
+{
+ "timestamp": "2026-10-06T13:43:23+0200",
+ "bench_hw": "strix-halo-395",
+ "url": "http://127.0.0.1:8091",
+ "request": {
+  "suite": "speed",
+  "sampling": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 20,
+   "min_p": 0.0,
+   "presence_penalty": 0.0
+  },
+  "runs": 2,
+  "long": true,
+  "max_tokens": {
+   "prose": 1000,
+   "code": 1000,
+   "reasoning": 1500,
+   "long": 600
+  },
+  "thinking": {
+   "prose": false,
+   "code": false,
+   "reasoning": true,
+   "long": false
+  }
+ },
+ "reconstructed": false,
+ "server": {
+  "config": "fn-udiq4xs-vk",
+  "mode": "speed",
+  "cmd": "~/llama.cpp-vulkan/build/bin/llama-server -m ~/models/Qwen3.8-UD_IQ4_XS/UD-IQ4_XS/Qwen3.8-Flash-Next-UD-IQ4_XS-00001-of-00003.gguf --host 0.0.0.0 --port 8091 -c 131072 -fa on --jinja --cache-type-k q8_0 --cache-type-v q8_0 --no-context-shift --reasoning-format auto --temp 1 --top-p 0.95 --top-k 20 --min-p 0.0 --repeat-penalty 1.0 --presence-penalty 0.0 --metrics -ngl 99 -t 16 -b 2048 -ub 2048 -lm none -md ~/models/flashnext-mtp/unsloth-20261005/MTP/mtp-Qwen3.8-Flash-Next-Q8_0.gguf -np 1 --spec-type draft-mtp --spec-draft-n-max 3 --spec-draft-p-min 0.0 ",
+  "env": {
+   "CTX": "131072",
+   "MTPN": "3",
+   "BENCH_HW": "strix-halo-395"
+  }
+ },
+ "server_props": {
+  "model_path": "~/models/Qwen3.8-UD_IQ4_XS/UD-IQ4_XS/Qwen3.8-Flash-Next-UD-IQ4_XS-00001-of-00003.gguf",
+  "total_slots": 1,
+  "build_info": "b200-6c73b3e",
+  "chat_template_caps": {
+   "supports_object_arguments": true,
+   "supports_parallel_tool_calls": true,
+   "supports_preserve_reasoning": true,
+   "supports_reasoning_effort": true,
+   "supports_string_content": true,
+   "supports_system_role": true,
+   "supports_tool_calls": true,
+   "supports_tools": true,
+   "supports_typed_content": true
+  },
+  "n_ctx_slot": 131072
+ },
+ "bench_commit": "08c9e6c"
+}

@@ -1,0 +1,111 @@
+{
+ "tag": "swfn-iq3xxs-hip-mtp3",
+ "gpu_mem_mib": null,
+ "runs": [
+  {
+   "test": "prose",
+   "run": 0,
+   "tg": 27.373831094255333,
+   "n": 1000,
+   "pp": 146.27329598140238,
+   "draft_n": 1421,
+   "draft_acc": 524,
+   "err": null
+  },
+  {
+   "test": "prose",
+   "run": 1,
+   "tg": 27.964447697539224,
+   "n": 1000,
+   "pp": 147.37191144000778,
+   "draft_n": 1396,
+   "draft_acc": 533,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 0,
+   "tg": 44.4782481108877,
+   "n": 1000,
+   "pp": 148.975791433892,
+   "draft_n": 871,
+   "draft_acc": 707,
+   "err": null
+  },
+  {
+   "test": "code",
+   "run": 1,
+   "tg": 44.66109072129405,
+   "n": 1000,
+   "pp": 149.75664545114188,
+   "draft_n": 869,
+   "draft_acc": 709,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 0,
+   "tg": 44.93485594382865,
+   "n": 940,
+   "pp": 182.23846382566492,
+   "draft_n": 810,
+   "draft_acc": 669,
+   "err": null
+  },
+  {
+   "test": "reasoning",
+   "run": 1,
+   "tg": 42.87106042761198,
+   "n": 1007,
+   "pp": 183.92317819251917,
+   "draft_n": 909,
+   "draft_acc": 703,
+   "err": null
+  },
+  {
+   "test": "prose@long_350",
+   "tg": 27.41213125397202,
+   "n": 539,
+   "pp": 412.1196385667011,
+   "prompt_n": 14692,
+   "cache_n": 0,
+   "draft_n": 690,
+   "draft_acc": 308,
+   "err": null
+  },
+  {
+   "test": "prose@long_700",
+   "tg": 23.604918776695435,
+   "n": 581,
+   "pp": 377.3108730375104,
+   "prompt_n": 29315,
+   "cache_n": 0,
+   "draft_n": 792,
+   "draft_acc": 317,
+   "err": null
+  },
+  {
+   "test": "prose@long_1250",
+   "tg": 21.665138412384444,
+   "n": 600,
+   "pp": 327.2718894479572,
+   "prompt_n": 52329,
+   "cache_n": 0,
+   "draft_n": 742,
+   "draft_acc": 350,
+   "err": null
+  }
+ ],
+ "gpu_mem_mib_after": null,
+ "summary": {
+  "prose": 27.7,
+  "code": 44.6,
+  "reasoning": 43.9,
+  "prose@long_350": 27.4,
+  "pp@long_350": 412,
+  "prose@long_700": 23.6,
+  "pp@long_700": 377,
+  "prose@long_1250": 21.7,
+  "pp@long_1250": 327
+ }
+}
